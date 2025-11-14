@@ -1,23 +1,13 @@
-import Header from "@/components/header"
-import Hero from "@/components/hero"
-import Services from "@/components/services"
-import About from "@/components/about"
-import Team from "@/components/team"
-import CTA from "@/components/cta"
-import Footer from "@/components/footer"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ArrowRight, Leaf, Menu, Sparkles } from "lucide-react";
+import LandingPage from "./LandingPage/page";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background">
-      <div className="relative">
-        <Header />
-        <Hero />
-      </div>
-      <Services />
-      <About />
-      <Team />
-      <CTA />
-      <Footer />
-    </main>
-  )
+    <LandingPage />
+  );
 }

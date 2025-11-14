@@ -124,3 +124,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap, 1rem))); }
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(calc(-100% - var(--gap, 1rem))); }
+  to { transform: translateX(0); }
+}
