@@ -1,54 +1,75 @@
 "use client";
-import {
-  Marquee,
-  MarqueeContent,
-  MarqueeFade,
-  MarqueeItem,
-} from "@/components/ui/shadcn-io/marquee";
 
-export default function Mitra() {
-  const MitraPartner = [
-    {
-      name: "1",
-      image:
-        "https://i.pinimg.com/originals/8c/99/28/8c992817370af5183f95ce718d88ec5c.png",
-    },
-    {
-      name: "2",
-      image:
-        "https://i.pinimg.com/originals/8c/99/28/8c992817370af5183f95ce718d88ec5c.png",
-    },
-  ];
+import Image from "next/image";
+
+// Data Dummy (Pastikan logo aslinya transparan/PNG)
+const partners = [
+  {
+    name: "Partner One",
+    src: "/max.jpg", // Biru
+  },
+  {
+    name: "Partner Two",
+    src: "/max.jpg", // Merah
+  },
+  {
+    name: "Partner Three",
+    src: "/max.jpg", // Hijau
+  },
+  {
+    name: "Partner Four",
+    src: "/max.jpg", // Kuning
+  },
+  {
+    name: "Partner Five",
+    src: "/max.jpg", // Ungu
+  },
+];
+
+export default function OurPartners() {
   return (
-    <section className="pt-20">
-      <div className="text-center mx-40 text-gray-600 text-wrap my-10">
-        <h1 className="text-4xl md:text-4xl font-bold text-center mb-5 text-primary">
-          Mitra Partner
-        </h1>
-        <p>
-          Kami berkomitmen untuk mendukung proyek-proyek yang berkualitas dan
-          bertujuan yang berbeda. Dengan bergabung dengan Mitra Partner kami,
-          kami dapat meningkatkan kemampuan kami dalam meningkatkan
-          produktivitas dan
-        </p>
-      </div>
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-4 md:px-8">
+        
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Our Partners
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            We are proud to collaborate with industry leaders to drive innovation
+            and deliver exceptional value.
+          </p>
+        </div>
 
-      <div className="flex size-full items-center justify-center bg-background">
-        <Marquee>
-          <MarqueeFade side="left" />
-          <MarqueeFade side="right" />
-          <MarqueeContent>
-            {MitraPartner.map((item) => (
-              <MarqueeItem className="h-32 w-32" key={item.name}>
-                <img
-                  alt={`Placeholder ${item.name}`}
-                  className="overflow-hidden rounded-full"
-                  src={item.image}
-                />
-              </MarqueeItem>
-            ))}
-          </MarqueeContent>
-        </Marquee>
+        {/* Grid Logo */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-12 items-center justify-items-center">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              // Tambahkan 'group' di parent agar hover terdeteksi lebih mudah
+              className="relative h-50 w-full max-w-[300px] flex items-center justify-center group cursor-pointer"
+            >
+              <Image
+                src={partner.src}
+                alt={partner.name}
+                fill
+                className="
+                  object-contain p-2
+                  transition-all duration-300 ease-in-out
+                  
+                  grayscale       
+                  opacity-40      
+                  
+                  group-hover:grayscale-0  
+                  group-hover:opacity-100  
+                  group-hover:scale-110     
+                "
+              />
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
