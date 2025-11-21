@@ -6,7 +6,9 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Hero from "./hero";
 import OurStory from "./our-story";
-
+import Struktur from "./struktur";
+import Mitra from "./our-partner";
+import Footer from "../Components/Footer";
 export default function AboutUs() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
@@ -21,7 +23,12 @@ export default function AboutUs() {
         <Hero />
         {/* Our Story Section */}
         <OurStory />
-
+        {/* Team Section */}
+        <Struktur />
+        {/* Partners Section */}
+        <Mitra />
+        {/* Footer Section */}
+        <Footer />
       </main>
     </div>
   );

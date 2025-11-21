@@ -20,15 +20,13 @@ export default function OurStory() {
       </div>
 
       {/* Tambahkan value dan onValueChange untuk mengontrol state */}
-      <Tabs 
-        defaultValue="vision" 
-        value={activeTab} 
+      <Tabs
+        defaultValue="vision"
+        value={activeTab}
         onValueChange={setActiveTab}
         className="w-full flex flex-col items-center"
       >
-        
         <TabsList className="w-full md:w-fit gap-8 border-b border-gray-200 relative">
-          
           {/* --- TRIGGER 1: VISION --- */}
           <TabsTrigger
             value="vision"
@@ -39,7 +37,6 @@ export default function OurStory() {
             "
           >
             Vision & Mission
-            
             {/* 3. INI LOGIKA MAGIC-NYA: */}
             {/* Jika tab ini aktif, render garis bawah animasi */}
             {activeTab === "vision" && (
@@ -57,16 +54,15 @@ export default function OurStory() {
             className="
               relative px-2 pb-3 pt-2 font-semibold text-gray-500 transition-colors duration-300
               hover:text-secondary
-              data-[state=active]:text-secondary
+              data-[state=active]:text-primary
             "
           >
             Company Profile
-
             {/* Copy logika motion div ke sini juga */}
             {activeTab === "profile" && (
               <motion.div
-                layoutId="active-tab-underline" // ID harus SAMA
-                className="absolute bottom-0 left-0 right-0 h-[3px] bg-slate-900"
+                layoutId="active-tab-underline" // ID ini harus SAMA di semua tab
+                className="absolute bottom-0 left-0 right-0 h-[3px] bg-secondary"
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
             )}
@@ -74,39 +70,53 @@ export default function OurStory() {
         </TabsList>
 
         {/* --- CONTENT (Tetap menggunakan animasi slide masuk) --- */}
-        <TabsContent 
-          value="vision" 
+        <TabsContent
+          value="vision"
           className="w-full mt-8 animate-in fade-in slide-in-from-left-8 duration-500 ease-out"
         >
           <div className="bg-slate-50/80 p-8 md:p-12 rounded-lg border border-slate-100 shadow-sm">
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-200 pb-8">
-              <h3 className="min-w-[150px] font-bold text-slate-700 text-lg">Our Vision</h3>
+              <h3 className="min-w-[150px] font-bold text-primary text-lg">
+                Our Vision
+              </h3>
               <p className="text-gray-600 leading-relaxed flex-1">
-                To be the global leader in sustainable technology, creating a
-                world where innovation and responsibility go hand in hand.
+                Menjadi pilar strategis dalam pembangunan daerah yang
+                berkelanjutan melalui pengelolaan sumber daya energi dan mineral
+                yang optimal.{" "}
               </p>
             </div>
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 pt-8">
-              <h3 className="min-w-[150px] font-bold text-slate-700 text-lg">Our Mission</h3>
+              <h3 className="min-w-[150px] font-bold text-primary text-lg">
+                Our Mission
+              </h3>
               <p className="text-gray-600 leading-relaxed flex-1">
-                To design and deliver user-centric products that solve complex
-                problems, driven by a passion for excellence.
+                ● Mengoptimalkan Pendapatan Asli Daerah (PAD) melalui
+                pemanfaatan sektor energi dan sumber daya mineral <br />
+                ● Mengembangkan usaha dari hulu hingga hilir di sektor migas
+                <br />
+                ● Menciptakan lapangan kerja dan mendorong pertumbuhan ekonomi
+                lokal <br />● Menjalankan tata kelola perusahaan yang
+                profesional, transparan, dan akuntabel.{" "}
               </p>
             </div>
           </div>
         </TabsContent>
 
-        <TabsContent 
-          value="profile" 
+        <TabsContent
+          value="profile"
           className="w-full mt-8 animate-in fade-in slide-in-from-left-8 duration-500 ease-out"
         >
           <div className="bg-slate-50/80 p-8 md:p-12 rounded-lg border border-slate-100 shadow-sm text-center h-[300px] flex items-center justify-center">
             <p className="text-gray-500 italic">
-              Konten Company Profile akan muncul di sini...
+              PT Rembang Migas Energi (Perseroda) adalah Badan Usaha Milik
+              Daerah (BUMD) yang didirikan berdasarkan kesepakatan antara
+              Pemerintah Kabupaten Rembang dan Dewan Perwakilan Rakyat Daerah
+              (DPRD). Pendirian ini dilandasi oleh urgensi untuk mengoptimalkan
+              potensi sumber daya alam lokal, khususnya di sektor minyak dan gas
+              bumi.{" "}
             </p>
           </div>
         </TabsContent>
-
       </Tabs>
     </section>
   );
