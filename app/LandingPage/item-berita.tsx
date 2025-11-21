@@ -37,7 +37,7 @@ export const BlogPostItem = ({ post }: BlogPostProps) => {
         <h3 className="text-2xl font-semibold text-slate-900">
           <Link
             href={`/blog/${post.id}`}
-            className="hover:text-green-700 transition-colors duration-300"
+            className="hover:text-primary transition-colors duration-300"
           >
             {post.title}
           </Link>
@@ -59,7 +59,7 @@ export const BlogPostItem = ({ post }: BlogPostProps) => {
       <div className="flex-shrink-0 md:ml-4">
         <Button
           asChild
-          className="bg-lime-400 text-black hover:bg-lime-500 rounded-full w-12 h-12"
+          className="bg-secondary text-white hover:bg-primary rounded-full w-12 h-12"
           size="icon"
           aria-label={`Read more about ${post.title}`}
         >

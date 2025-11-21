@@ -12,12 +12,12 @@ export default function AboutUsSection() {
           {/* 2. Kolom Kiri (Konten Teks) */}
           <div className="lg:col-span-1 ">
             {/* Badge */}
-            <span className="inline-block bg-lime-100 text-lime-800 text-sm font-semibold px-4 py-1 rounded-full">
+            <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
               ABOUT US
             </span>
 
             {/* Judul */}
-            <h2 className="text-4xl font-bold text-gray-900 mt-4">
+            <h2 className="text-4xl font-bold text-black mt-4">
               The Green Power
             </h2>
 
@@ -68,7 +68,7 @@ export default function AboutUsSection() {
             {/* Tombol CTA */}
             <Button
               size="lg"
-              className="bg-lime-400 text-black font-semibold hover:bg-lime-500 mt-8 px-6 py-3"
+              className="bg-secondary text-white font-semibold hover:bg-primary mt-8 px-6 py-3"
             >
               <ArrowRight className="w-5 h-5 mr-2" />
               Learn more

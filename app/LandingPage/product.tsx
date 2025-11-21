@@ -7,17 +7,17 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 const services = [
   {
     title: "Residential Solar",
-    imageSrc: "/images/service-residential.jpg", // GANTI PATH INI
+    imageSrc: "/max.jpg", // GANTI PATH INI
     href: "#",
   },
   {
     title: "Hydropower System",
-    imageSrc: "/images/service-hydropower.jpg", // GANTI PATH INI
+    imageSrc: "/max.jpg", // GANTI PATH INI
     href: "#",
   },
   {
     title: "Wind Turbine",
-    imageSrc: "/images/service-wind.jpg", // GANTI PATH INI
+    imageSrc: "/max.jpg", // GANTI PATH INI
     href: "#",
   },
 ];
@@ -32,8 +32,8 @@ export default function ServiceSection() {
         <div className="flex flex-col md:flex-row justify-between md:items-start gap-6 mb-12">
           {/* Kolom Kiri */}
           <div>
-            <span className="inline-block bg-lime-100 text-lime-800 text-sm font-semibold px-4 py-1 rounded-full">
-              SERVICE
+            <span className="inline-block bg-secondary/10 text-secondary/80 text-sm font-semibold px-4 py-1 rounded-full">
+              Product
             </span>
             <h2 className="text-4xl font-bold text-gray-900 mt-4">
               Our Solar Solutions
@@ -73,9 +73,9 @@ export default function ServiceSection() {
                   </h3>
                   <Button
                     size="icon"
-                    className="bg-lime-400 text-black rounded-full hover:bg-lime-500 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                    className="bg-secondary text-black rounded-full hover:bg-secondary flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                   >
-                    <ArrowUpRight className="w-5 h-5" />
+                    <ArrowUpRight className="w-5 text-white h-5" />
                   </Button>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function ServiceSection() {
         <div className="flex justify-center mt-12">
           <Button
             size="lg"
-            className="bg-lime-400 text-black font-semibold hover:bg-lime-500 px-6 py-6 h-auto text-base"
+            className="bg-secondary text-white font-semibold hover:bg-secondary px-6 py-6 text-base"
           >
             <ArrowRight className="w-5 h-5 mr-2" />
             View all services

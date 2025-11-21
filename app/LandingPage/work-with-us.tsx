@@ -12,7 +12,7 @@ export default function WorkWithUs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           <div className="lg:col-span-1">
-            <span className="inline-block bg-lime-100 text-lime-800 text-sm font-semibold px-4 py-1 rounded-full">
+            <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
               ABOUT US
             </span>
 
@@ -21,7 +21,7 @@ export default function WorkWithUs() {
             </h2>
             <Button
               size="lg"
-              className="bg-lime-400 text-black font-semibold hover:bg-lime-500 mt-8 px-6 py-3"
+              className="bg-secondary text-white font-semibold hover:bg-primary mt-8 px-6 py-3"
             >
               Kontak Kami
               <ArrowRight className="w-5 h-5 ml-2" /> {/* Saya pindahkan ikon ke kanan (ml-2) */}

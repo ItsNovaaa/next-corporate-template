@@ -43,12 +43,12 @@ export default function Berita() {
         {/* 2. Bagian Header Seksi */}
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-5xl font-bold text-slate-900 tracking-tight">
-            Solar News and Insights
+            Berita
           </h2>
           <Button
             size="lg"
             asChild
-            className="bg-lime-400 text-black hover:bg-lime-500 rounded-full px-6 py-3 hidden md:flex" // Tombol desktop
+            className="bg-secondary text-white hover:bg-secondary rounded-full px-6 py-3 hidden md:flex" // Tombol desktop
           >
             <Link href="/blog">
               View all blogs

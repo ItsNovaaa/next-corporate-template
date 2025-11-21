@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ArrowRight, Leaf, Menu, Sparkles } from "lucide-react";
 
-export default function Navbar() {
+export default function SubNavbar() {
   // 2. State to track scroll status
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -53,14 +53,14 @@ export default function Navbar() {
       // 4. Dynamic ClassName based on isScrolled state
       className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-8 lg:px-12 transition-all duration-300 ease-in-out ${
         isScrolled
-          ? "bg-gray-900/90 backdrop-blur-md shadow-lg p-3" // Style when scrolled
+          ? "bg-white/50 backdrop-blur-md shadow-lg p-3" // Style when scrolled
           : "bg-transparent p-5" // Style when at top
       }`}
     >
       {/* Sisi Kiri: Logo */}
       <Link href="/" className="flex items-center gap-2">
         <Leaf className="text-green-400 w-7 h-7" />
-        <span className="text-2xl font-bold text-white">Green Power</span>
+        <span className="text-2xl font-bold text-black">Green Power</span>
       </Link>
 
       {/* Sisi Tengah: Navigasi (Desktop) */}
@@ -69,7 +69,7 @@ export default function Navbar() {
           <Link
             key={index}
             href={item.href}
-            className="text-white hover:text-green-400 transition-colors duration-200 flex items-center"
+            className="text-black hover:text-green-400 transition-colors duration-200 flex items-center"
           >
             <span className="ml-2">{item.title}</span>
           </Link>
@@ -78,7 +78,7 @@ export default function Navbar() {
 
       {/* Sisi Kanan: Tombol Aksi (Desktop) */}
       <div className="hidden md:flex items-center gap-2">
-        <Button className="bg-secondary text-white font-semibold hover:bg-primary rounded-full">
+        <Button className="bg-white text-black font-semibold hover:bg-gray-200 rounded-full">
           Contact Us
         </Button>
       </div>

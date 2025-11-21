@@ -39,7 +39,7 @@ export default function MarqueeSection() {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="text-center px-40 py-10 flex flex-col items-center gap-4">
-        <span className="inline-block bg-lime-100 text-lime-800 text-sm font-semibold px-4 py-1 rounded-full">
+        <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
           ABOUT US
         </span>
 
@@ -63,7 +63,7 @@ export default function MarqueeSection() {
         <MarqueeContent >
           {data.map((item, index) => (
             <MarqueeItem key={index}>
-              <Card className="max-w-[400px] mx-2 bg-white">
+              <Card className="max-w-[400px] mx-2 my-1 bg-white">
                 <CardHeader className="flex gap-3 items-center">
                   <img
                     alt="heroui logo"
@@ -90,7 +90,7 @@ export default function MarqueeSection() {
         <MarqueeContent direction="right">
           {data.map((item, index) => (
             <MarqueeItem key={index}>
-              <Card className="max-w-[400px] mx-2 bg-white">
+              <Card className="max-w-[400px] mx-2 my-3 bg-white">
                 <CardHeader className="flex gap-3 items-center">
                   <img
                     alt="heroui logo"

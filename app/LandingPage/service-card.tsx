@@ -56,9 +56,9 @@ export default function AdvancedServiceCard({
       >
         <button
           // onClick={handleClick}
-          className="bg-[#C5F82A] hover:bg-[#b5e820] text-black rounded-full w-12 h-12
+          className="bg-secondary hover:bg-secondary text-white rounded-full w-12 h-12
                        flex items-center justify-center
-                       shadow-lg shadow-[#C5F82A]/30 hover:shadow-xl hover:shadow-[#C5F82A]/40
+                       shadow-lg shadow-secondary/30 hover:shadow-xl hover:shadow-secondary/40
                        transition-all duration-300 ease-in-out z-20 relative
                        hover:scale-105 active:scale-95"
           aria-label="View service details"

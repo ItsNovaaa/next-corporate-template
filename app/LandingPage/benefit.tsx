@@ -52,7 +52,7 @@ export default function BenefitsSection() {
         <div className="flex flex-col md:flex-row justify-between md:items-start gap-6 mb-12">
           {/* Kolom Kiri */}
           <div>
-            <span className="inline-block bg-lime-100 text-lime-800 text-sm font-semibold px-4 py-1 rounded-full">
+            <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
               BENEFITS
             </span>
             <h2 className="text-4xl font-bold text-gray-900 mt-4">
@@ -88,7 +88,7 @@ export default function BenefitsSection() {
                   />
                   {/* Container Ikon */}
                   <div className="absolute top-4 left-4 z-10">
-                    <div className="bg-green-900 rounded-full p-3 inline-block">
+                    <div className="bg-secondary rounded-full p-3 inline-block">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                   </div>

@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
           <Button
             size="lg"
-            className="mt-8 bg-lime-400 text-black hover:bg-lime-500 text-lg px-8 py-7 rounded-full"
+            className="mt-8 bg-secondary text-white hover:bg-primary text-lg px-8 py-7 rounded-full"
           >
             <ArrowRight className="w-5 h-5 mr-2" />
             Get A Free Quote
