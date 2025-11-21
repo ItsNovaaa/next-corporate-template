@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <section>
-      <footer className="bg-[#0a2b1a] text-gray-300 py-12 md:py-16">
+      <footer className="bg-secondary text-white py-12 md:py-16">
         <div className="container mx-auto px-20">
           {/* Grid responsif: 1 kolom di HP, 2 di tablet, 3 di desktop */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-32">
@@ -70,37 +70,37 @@ export default function Footer() {
               <div className="flex flex-wrap gap-2 mt-4">
                 <Link
                   href="#"
-                  className="bg-black/30 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-black/50 transition-colors"
+                  className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
                   REGISTRATION
                 </Link>
                 <Link
                   href="#"
-                  className="bg-black/30 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-black/50 transition-colors"
+                  className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
                   CONTACT
                 </Link>
                 <Link
                   href="#"
-                  className="bg-black/30 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-black/50 transition-colors"
+                  className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
                   FEATURES
                 </Link>
                 <Link
                   href="#"
-                  className="bg-black/30 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-black/50 transition-colors"
+                  className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
                   SERVICE
                 </Link>
                 <Link
                   href="#"
-                  className="bg-black/30 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-black/50 transition-colors"
+                  className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
                   PROJECTS
                 </Link>
                 <Link
                   href="#"
-                  className="bg-black/30 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-black/50 transition-colors"
+                  className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
                   PRICING
                 </Link>

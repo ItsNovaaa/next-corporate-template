@@ -1,12 +1,24 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 
-export default function Hero() {
+import { useState } from "react";
+import Image from "next/image";
+import { ArrowRight, ChevronRight } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { cn } from "@/lib/utils";
+import Produk from "./produk-section";
+import Link from "next/link";
+
+// --- 1. DATA BARU (DENGAN 2 KONTEKS & GAMBAR BERBEDA) ---
+export default function StrategyHero() {
   return (
     <section>
-      {/* HERO SECTION */}
       <section className="relative w-full h-[500px] overflow-hidden">
         {/* A. Background Image */}
         <div className="absolute inset-0">
@@ -27,7 +39,7 @@ export default function Hero() {
         <div className="relative z-20 h-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center">
           {/* Judul Besar */}
           <h1 className="text-4xl md:text-3xl lg:text-6xl font-bold text-white tracking-wide uppercase drop-shadow-lg">
-            Tentang Kami
+            Produk Kami
           </h1>
 
           {/* Breadcrumb (Posisi Kiri Bawah) */}

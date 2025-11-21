@@ -6,23 +6,23 @@ import Image from "next/image";
 const partners = [
   {
     name: "Partner One",
-    src: "/max.jpg", // Biru
+    src: "/shell.png", // Biru
   },
   {
     name: "Partner Two",
-    src: "/max.jpg", // Merah
+    src: "/shell.png", // Merah
   },
   {
     name: "Partner Three",
-    src: "/max.jpg", // Hijau
+    src: "/shell.png", // Hijau
   },
   {
     name: "Partner Four",
-    src: "/max.jpg", // Kuning
+    src: "/shell.png", // Kuning
   },
   {
     name: "Partner Five",
-    src: "/max.jpg", // Ungu
+    src: "/shell.png", // Ungu
   },
 ];
 

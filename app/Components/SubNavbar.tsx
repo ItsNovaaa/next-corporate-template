@@ -37,16 +37,22 @@ export default function SubNavbar() {
       icon: Leaf,
     },
     {
-      title: "Service",
-      href: "/service",
+      title: "Product",
+      href: "/produk",
       icon: Sparkles,
     },
     {
-      title: "Benefits",
-      href: "/benefits",
+      title: "Ruang Lingkup",
+      href: "/ruang-lingkup",
       icon: Sparkles,
     },
+    {
+      title: "Milestone",
+      href: "/milestone",
+      icon: Sparkles,
+    }
   ];
+
 
   return (
     <header
