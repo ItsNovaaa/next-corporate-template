@@ -75,7 +75,7 @@ export default function SubNavbar() {
           <Link
             key={index}
             href={item.href}
-            className="text-black hover:text-green-400 transition-colors duration-200 flex items-center"
+            className="text-black hover:text-secondary transition-colors duration-200 flex items-center"
           >
             <span className="ml-2">{item.title}</span>
           </Link>

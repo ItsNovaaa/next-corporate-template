@@ -51,7 +51,7 @@ export default function Berita() {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
             Berita Terbaru
           </h2>
-          <Button size="lg" asChild className="bg-secondary text-white hover:bg-emerald-600 rounded-full px-6 py-3 hidden md:flex">
+          <Button size="lg" asChild className="bg-secondary text-white hover:bg-primary rounded-full px-6 py-3 hidden md:flex">
             <Link href="/berita"> {/* Link ke halaman baru */}
               Lihat Semua Berita
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -68,7 +68,7 @@ export default function Berita() {
 
         {/* Mobile Button */}
         <div className="mt-12 text-center md:hidden">
-          <Button asChild className="bg-secondary text-white hover:bg-emerald-600 rounded-full px-6 py-3 w-full">
+          <Button asChild className="bg-secondary text-white hover:bg-primary rounded-full px-6 py-3 w-full">
             <Link href="/berita">
               Lihat Semua Berita
               <ArrowRight className="w-5 h-5 ml-2" />

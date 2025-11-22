@@ -64,7 +64,7 @@ export default function Navbar() {
     >
       {/* Sisi Kiri: Logo */}
       <Link href="/" className="flex items-center gap-2">
-        <Leaf className="text-green-400 w-7 h-7" />
+        <Leaf className="text-primary w-7 h-7" />
         <span className="text-2xl font-bold text-white">Green Power</span>
       </Link>
 
@@ -74,7 +74,7 @@ export default function Navbar() {
           <Link
             key={index}
             href={item.href}
-            className="text-white hover:text-green-400 transition-colors duration-200 flex items-center"
+            className="text-white hover:text-secondary transition-colors duration-200 flex items-center"
           >
             <span className="ml-2">{item.title}</span>
           </Link>
@@ -110,7 +110,7 @@ export default function Navbar() {
                 <Link 
                   key={index} 
                   href={item.href} 
-                  className="font-semibold text-white hover:text-green-400 text-lg"
+                  className="font-semibold text-white hover:text-primary text-lg"
                 >
                   {item.title}
                 </Link>
