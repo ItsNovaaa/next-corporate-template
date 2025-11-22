@@ -56,7 +56,7 @@ export default function BenefitsSection() {
               BENEFITS
             </span>
             <h2 className="text-4xl font-bold text-gray-900 mt-4">
-              Why Should You Use Solar
+              Kemudahan Bekerja Bersama Kami
             </h2>
           </div>
           {/* Kolom Kanan */}
