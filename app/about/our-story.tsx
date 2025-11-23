@@ -36,7 +36,7 @@ export default function OurStory() {
               data-[state=active]:text-primary
             "
           >
-            Vision & Mission
+            Visi & Misi
             {/* 3. INI LOGIKA MAGIC-NYA: */}
             {/* Jika tab ini aktif, render garis bawah animasi */}
             {activeTab === "vision" && (
@@ -57,7 +57,7 @@ export default function OurStory() {
               data-[state=active]:text-primary
             "
           >
-            Company Profile
+            Profil Perusahaan
             {/* Copy logika motion div ke sini juga */}
             {activeTab === "profile" && (
               <motion.div
@@ -77,7 +77,7 @@ export default function OurStory() {
           <div className="bg-slate-50/80 p-8 md:p-12 rounded-lg border border-slate-100 shadow-sm">
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-200 pb-8">
               <h3 className="min-w-[150px] font-bold text-primary text-lg">
-                Our Vision
+                Visi
               </h3>
               <p className="text-gray-600 leading-relaxed flex-1">
                 Menjadi pilar strategis dalam pembangunan daerah yang
@@ -87,7 +87,7 @@ export default function OurStory() {
             </div>
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 pt-8">
               <h3 className="min-w-[150px] font-bold text-primary text-lg">
-                Our Mission
+                Misi
               </h3>
               <p className="text-gray-600 leading-relaxed flex-1">
                 ● Mengoptimalkan Pendapatan Asli Daerah (PAD) melalui

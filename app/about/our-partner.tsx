@@ -30,15 +30,14 @@ export default function OurPartners() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-8">
-        
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Our Partners
+            Partner Kami
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            We are proud to collaborate with industry leaders to drive innovation
-            and deliver exceptional value.
+            Kami bangga dapat berkolaborasi dengan para pemimpin industri untuk
+            mendorong inovasi dan memberikan nilai yang luar biasa.{" "}
           </p>
         </div>
 
@@ -69,7 +68,6 @@ export default function OurPartners() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
