@@ -17,14 +17,13 @@ export default function Hero() {
           oleh Doa{" "}
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl text-gray-200">
-          Discover the amazing ways solar energy can transform your home or
-          business.
+          Temukan cara luar biasa energi surya dapat mengubah rumah atau bisnis Anda.
         </p>
         <Button
           size="lg"
           className="mt-8 bg-secondary text-white hover:bg-primary text-lg px-8 py-7 rounded-full"
         >
-          Get A Free Quote
+          Dapatkan Penawaran Gratis
           <ArrowRight className="w-5 h-5" />
         </Button>
       </div>
@@ -43,9 +42,9 @@ export default function Hero() {
                 className="rounded-md object-cover h-20 w-20"
               />
               <div>
-                <h3 className="font-bold text-lg">Alternative Energy</h3>
+                <h3 className="font-bold text-lg">Energi Alternatif</h3>
                 <p className="text-sm text-gray-200">
-                  Discover the amazing ways solar energy can transform.
+                  Temukan cara luar biasa energi surya dapat mengubah.
                 </p>
               </div>
             </CardContent>
@@ -76,7 +75,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <p className="text-sm">
-                  Our 200+ satisfied clients world wide.
+                  200+ klien puas kami di seluruh dunia.
                 </p>
               </div>
               {/* <Sparkles className="text-green-400 w-8 h-8 flex-shrink-0" /> */}

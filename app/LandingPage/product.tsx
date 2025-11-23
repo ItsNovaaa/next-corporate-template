@@ -28,7 +28,7 @@ const services = [
   {
     id: "perdagangan-mineral",
     title: "Perdagangan Mineral",
-    subtitle: "Sustainable Mining Trading",
+    subtitle: "Perdagangan Pertambangan Berkelanjutan",
     imageSrc: "/perdagangan-mineral.jpeg",
     description:
       "Layanan perdagangan mineral yang transparan dan berkelanjutan, menghubungkan sumber daya alam dengan kebutuhan pasar global.",
@@ -38,7 +38,7 @@ const services = [
   {
     id: "layanan-penunjang",
     title: "Layanan Penunjang",
-    subtitle: "Support & Maintenance",
+    subtitle: "Dukungan & Pemeliharaan",
     imageSrc: "/layanan-penunjang.jpg",
     description:
       "Dukungan teknis dan operasional menyeluruh untuk memastikan infrastruktur energi Anda berjalan optimal.",
@@ -51,20 +51,20 @@ export default function ServiceSection() {
   return (
     <section className="bg-white text-gray-900 py-16 md:py-20">
       <div className="container mx-auto px-4 md:px-8">
-        
+
         {/* --- AREA HEADER --- */}
         <div className="flex flex-col md:flex-row justify-between md:items-start gap-6 mb-12">
           <div>
             <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
-              Product & Services
+              Produk & Layanan
             </span>
             <h2 className="text-4xl font-bold text-gray-900 mt-4">
-              Our Solar Solutions
+              Solusi Surya Kami
             </h2>
           </div>
           <p className="text-gray-600 text-lg max-w-md md:mt-2">
-            We believe in the power of solar energy to transform lives and
-            communities through comprehensive solutions.
+            Kami percaya pada kekuatan energi surya untuk mengubah kehidupan dan
+            komunitas melalui solusi komprehensif.
           </p>
         </div>
 
@@ -72,11 +72,11 @@ export default function ServiceSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service) => (
             <Dialog key={service.id}>
-              
+
               {/* 1. TRIGGER (Tampilan Kartu di Landing Page) */}
               <DialogTrigger asChild>
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
-                  
+
                   {/* Gambar Latar */}
                   <Image
                     src={service.imageSrc}
@@ -84,7 +84,7 @@ export default function ServiceSection() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  
+
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
@@ -93,13 +93,13 @@ export default function ServiceSection() {
                     <div className="flex justify-between items-end">
                       <div>
                         <p className="text-secondary text-xs font-bold uppercase tracking-wider mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                          View Details
+                          Lihat Detail
                         </p>
                         <h3 className="text-2xl font-bold text-white">
                           {service.title}
                         </h3>
                       </div>
-                      
+
                       <Button
                         size="icon"
                         className="bg-secondary text-white rounded-full hover:bg-secondary flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
@@ -114,7 +114,7 @@ export default function ServiceSection() {
               {/* 2. CONTENT (Tampilan Popup Modal) */}
               {/* bg-white ditambahkan untuk mencegah transparan */}
               <DialogContent className="bg-white max-w-3xl p-0 overflow-hidden rounded-2xl border-none z-50">
-                
+
                 {/* Header Gambar di dalam Modal */}
                 <div className="relative w-full h-56 md:h-72">
                   <Image
@@ -145,8 +145,8 @@ export default function ServiceSection() {
                     <hr className="border-gray-200" />
                     <p>{service.details}</p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                     </p>
                     <ul className="list-disc pl-5 space-y-2 text-gray-600">
@@ -168,7 +168,7 @@ export default function ServiceSection() {
             size="lg"
             className="bg-secondary text-white font-semibold hover:bg-primary rounded-full px-8 py-6 text-base"
           >
-            View all services
+            Lihat semua layanan
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>

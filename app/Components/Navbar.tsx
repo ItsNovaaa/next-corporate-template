@@ -57,11 +57,10 @@ export default function Navbar() {
   return (
     <header
       // 4. Dynamic ClassName based on isScrolled state
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-8 lg:px-12 transition-all duration-300 ease-in-out ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-8 lg:px-12 transition-all duration-300 ease-in-out ${isScrolled
           ? "bg-white/80 backdrop-blur-md shadow-lg p-3" // UPDATED: Tambahkan bg-white/80 agar teks hitam terlihat jelas
           : "bg-transparent"
-      }`}
+        }`}
     >
       {/* Sisi Kiri: Logo */}
       <Link href="/" className="flex items-center gap-2">
@@ -98,9 +97,8 @@ export default function Navbar() {
             key={index}
             href={item.href}
             // UPDATED: Kondisi warna teks Navigasi
-            className={`transition-colors duration-200 flex items-center hover:text-secondary ${
-              isScrolled ? "text-black" : "text-white"
-            }`}
+            className={`transition-colors duration-200 flex items-center hover:text-secondary ${isScrolled ? "text-black" : "text-white"
+              }`}
           >
             <span className="ml-2">{item.title}</span>
           </Link>
@@ -109,7 +107,7 @@ export default function Navbar() {
       {/* Sisi Kanan: Tombol Aksi (Desktop) */}
       <div className="hidden md:flex items-center gap-2">
         <Button className="bg-secondary text-white font-semibold hover:bg-primary rounded-full">
-          Contact Us
+          Hubungi Kami
         </Button>
       </div>
       {/* Tombol Menu Mobile (Hamburger) */}
@@ -142,13 +140,13 @@ export default function Navbar() {
             </nav>
             <div className="flex flex-col gap-4 mt-8">
               <Button className="bg-white text-black font-semibold hover:bg-gray-200 w-full">
-                Contact Us
+                Hubungi Kami
               </Button>
               <Button
                 variant="ghost"
                 className="text-white font-semibold hover:bg-white/10 hover:text-white w-full border border-white/20"
               >
-                Registration
+                Pendaftaran
               </Button>
             </div>
           </SheetContent>

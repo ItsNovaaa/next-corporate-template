@@ -4,16 +4,16 @@ import { ArrowRight, Star } from "lucide-react";
 
 export default function AboutUsSection() {
   return (
-    <section className="bg-white text-gray-900 py-36c:\Users\Novari\Downloads\ASSETS__-05.png md:py-28"  >
+    <section className="bg-white text-gray-900 py-36 md:py-28"  >
       <div className="container mx-auto px-4">
         {/* 1. Tata Letak Section Utama (Grid) */}
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mx-12 items-center">
-          
+
           {/* 2. Kolom Kiri (Konten Teks) */}
           <div className="lg:col-span-1 ">
             {/* Badge */}
             <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
-              ABOUT US
+              TENTANG KAMI
             </span>
 
             {/* Judul */}
@@ -23,10 +23,10 @@ export default function AboutUsSection() {
 
             {/* Paragraf Deskripsi */}
             <p className="text-gray-600 mt-4 text-base">
-              Green Power is a leading provider of solar energy solutions,
-              dedicated to empowering individuals and businesses with clean,
-              renewable energy. We believe in the power of solar energy to
-              transform lives and communities.
+              Green Power adalah penyedia terkemuka solusi energi surya,
+              berdedikasi untuk memberdayakan individu dan bisnis dengan energi bersih,
+              terbarukan. Kami percaya pada kekuatan energi surya untuk
+              mengubah kehidupan dan komunitas.
             </p>
 
             {/* Blok Review */}
@@ -34,7 +34,7 @@ export default function AboutUsSection() {
               <div className="flex items-center gap-1">
                 <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
                 <span className="text-gray-700 font-medium">
-                  Excellent 4.8 / 5
+                  Luar Biasa 4.8 / 5
                 </span>
               </div>
               <div className="h-6 w-px bg-gray-300 hidden sm:block"></div>
@@ -62,7 +62,7 @@ export default function AboutUsSection() {
                   className="rounded-full border-2 border-white w-10 h-10 object-cover"
                 />
               </div>
-              <span className="text-gray-700 font-medium">Reviews 130+</span>
+              <span className="text-gray-700 font-medium">Ulasan 130+</span>
             </div>
 
             {/* Tombol CTA */}
@@ -71,7 +71,7 @@ export default function AboutUsSection() {
               className="bg-secondary text-white font-semibold hover:bg-primary mt-8 px-6 py-3"
             >
               <ArrowRight className="w-5 h-5 mr-2" />
-              Learn more
+              Pelajari lebih lanjut
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ export default function AboutUsSection() {
                   alt="Pekerja Green Power dengan panel surya"
                   className="rounded-2xl object-cover w-full h-auto max-h-[700px]"
                 />
-                <div className="absolute inset-0 bg-black/10 rounded-2xl"/>
+                <div className="absolute inset-0 bg-black/10 rounded-2xl" />
               </div>
 
               {/* Kartu Statistik (Overlap) */}
@@ -95,12 +95,12 @@ export default function AboutUsSection() {
                   <CardContent className="p-0">
                     <div className="flex items-baseline gap-2">
                       <span className="text-5xl font-bold text-gray-900">87%</span>
-                      <span className="text-lg text-gray-700">Success</span>
+                      <span className="text-lg text-gray-700">Sukses</span>
                     </div>
                     <p className="text-gray-600 mt-3">
-                      Green Power is dedicated to empowering individuals and
-                      businesses with clean, renewable energy. We strive to make
-                      solar energy accessible and affordable for all.
+                      Green Power berdedikasi untuk memberdayakan individu dan
+                      bisnis dengan energi bersih dan terbarukan. Kami berusaha untuk membuat
+                      energi surya dapat diakses dan terjangkau bagi semua.
                     </p>
                   </CardContent>
                 </Card>
@@ -110,12 +110,12 @@ export default function AboutUsSection() {
                   <CardContent className="p-0">
                     <div className="flex items-baseline gap-2">
                       <span className="text-5xl font-bold text-gray-900">05+</span>
-                      <span className="text-lg text-gray-700">Experience</span>
+                      <span className="text-lg text-gray-700">Pengalaman</span>
                     </div>
                     <p className="text-gray-600 mt-3">
-                      Our vision is to be a global leader in sustainable energy
-                      solutions, creating a brighter, cleaner future for
-                      generations to come.
+                      Visi kami adalah menjadi pemimpin global dalam solusi energi
+                      berkelanjutan, menciptakan masa depan yang lebih cerah dan bersih bagi
+                      generasi mendatang.
                     </p>
                   </CardContent>
                 </Card>

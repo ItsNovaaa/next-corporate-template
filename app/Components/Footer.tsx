@@ -17,11 +17,11 @@ export default function Footer() {
                 </span>
               </Link>
               <p className="mt-4 text-sm max-w-xs">
-                Green Power is a leading provider of solar energy solutions.
+                Green Power adalah penyedia terkemuka solusi energi surya.
               </p>
 
               <h3 className="text-lg font-semibold text-white mt-8 mb-4">
-                Social Links
+                Tautan Sosial
               </h3>
               <div className="flex gap-4">
                 <a
@@ -66,50 +66,50 @@ export default function Footer() {
 
             {/* --- Kolom 2: Quick Link --- */}
             <div>
-              <h3 className="text-lg font-semibold text-white">Quick Link</h3>
+              <h3 className="text-lg font-semibold text-white">Tautan Cepat</h3>
               <div className="flex flex-wrap gap-2 mt-4">
                 <Link
                   href="#"
                   className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
-                  REGISTRATION
+                  PENDAFTARAN
                 </Link>
                 <Link
                   href="#"
                   className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
-                  CONTACT
+                  KONTAK
                 </Link>
                 <Link
                   href="#"
                   className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
-                  FEATURES
+                  FITUR
                 </Link>
                 <Link
                   href="#"
                   className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
-                  SERVICE
+                  LAYANAN
                 </Link>
                 <Link
                   href="#"
                   className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
-                  PROJECTS
+                  PROYEK
                 </Link>
                 <Link
                   href="#"
                   className="bg-primary/50 text-xs font-medium px-3 py-1.5 rounded-full hover:bg-primary/50 transition-colors"
                 >
-                  PRICING
+                  HARGA
                 </Link>
               </div>
             </div>
 
             {/* --- Kolom 3: Contact --- */}
             <div>
-              <h3 className="text-lg font-semibold text-white">Contact</h3>
+              <h3 className="text-lg font-semibold text-white">Kontak</h3>
               <div className="mt-4 space-y-3 text-sm">
                 <p>
                   <a

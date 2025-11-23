@@ -7,34 +7,34 @@ import { BlogPostItem, BlogPostData } from "./item-berita"; // Pastikan path imp
 const blogPosts: BlogPostData[] = [
   {
     id: "1",
-    title: "The Future of Residential Solar: Trends to Watch in 2026",
-    description: "Discover the upcoming innovations in solar technology, from bifacial panels to smart energy management systems.",
+    title: "Masa Depan Surya Perumahan: Tren yang Perlu Diperhatikan di 2026",
+    description: "Temukan inovasi mendatang dalam teknologi surya, dari panel bifacial hingga sistem manajemen energi cerdas.",
     // Isi konten panjang untuk Modal
-    content: `The solar industry is evolving rapidly. In 2026, we expect to see a surge in bifacial solar panels adoption for residential use, allowing energy capture from both sides of the panel.
+    content: `Industri surya berkembang pesat. Pada tahun 2026, kami memperkirakan lonjakan adopsi panel surya bifacial untuk penggunaan perumahan, memungkinkan penangkapan energi dari kedua sisi panel.
     
-    Furthermore, smart energy management systems integrated with AI will become standard, optimizing battery usage based on weather patterns and usage habits. This ensures maximum efficiency and cost savings for homeowners.`,
+    Selain itu, sistem manajemen energi cerdas yang terintegrasi dengan AI akan menjadi standar, mengoptimalkan penggunaan baterai berdasarkan pola cuaca dan kebiasaan penggunaan. Ini memastikan efisiensi maksimum dan penghematan biaya bagi pemilik rumah.`,
     imageUrl: "/max.jpg",
     readTime: "06 min read",
     date: "Nov 10, 2025",
   },
   {
     id: "2",
-    title: "How Solar Incentives Can Save You Thousands This Year",
-    description: "A deep dive into the latest federal and state tax credits and rebates available for new solar installations.",
-    content: `Understanding tax credits is crucial for maximizing ROI. This year, the federal government has extended the ITC (Investment Tax Credit), allowing homeowners to deduct 30% of the cost of installing a solar energy system from their federal taxes.
+    title: "Bagaimana Insentif Surya Dapat Menghemat Ribuan Tahun Ini",
+    description: "Pembahasan mendalam tentang kredit pajak federal dan negara bagian serta rabat terbaru yang tersedia untuk instalasi surya baru.",
+    content: `Memahami kredit pajak sangat penting untuk memaksimalkan ROI. Tahun ini, pemerintah federal telah memperpanjang ITC (Kredit Pajak Investasi), yang memungkinkan pemilik rumah memotong 30% dari biaya pemasangan sistem energi surya dari pajak federal mereka.
     
-    Additionally, many states offer local rebates that can be stacked with federal incentives. We break down the most lucrative opportunities available in your region.`,
+    Selain itu, banyak negara bagian menawarkan rabat lokal yang dapat digabungkan dengan insentif federal. Kami merinci peluang paling menguntungkan yang tersedia di wilayah Anda.`,
     imageUrl: "/max.jpg",
     readTime: "05 min read",
     date: "Nov 02, 2025",
   },
   {
     id: "3",
-    title: "Case Study: A 1920s Home Goes Net-Zero with Solar",
-    description: "See the challenges and triumphs of retrofitting an older home with a modern, high-efficiency solar array.",
-    content: `Retrofitting a 100-year-old home presents unique challenges, from structural integrity to aesthetic preservation. In this case study, we explore how the Green Power team successfully installed a 8kW system on a heritage property.
+    title: "Studi Kasus: Rumah Era 1920-an Menjadi Net-Zero dengan Surya",
+    description: "Lihat tantangan dan keberhasilan memodernisasi rumah tua dengan susunan surya modern yang efisien tinggi.",
+    content: `Memodernisasi rumah berusia 100 tahun menghadirkan tantangan unik, dari integritas struktural hingga pelestarian estetika. Dalam studi kasus ini, kami mengeksplorasi bagaimana tim Green Power berhasil memasang sistem 8kW di properti warisan.
     
-    The result? A Net-Zero home that preserves its historical charm while producing 100% of its own electricity needs.`,
+    Hasilnya? Rumah Net-Zero yang mempertahankan pesona sejarahnya sambil memproduksi 100% kebutuhan listriknya sendiri.`,
     imageUrl: "/max.jpg",
     readTime: "08 min read",
     date: "Oct 28, 2025",
@@ -45,7 +45,7 @@ export default function Berita() {
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-20">
-        
+
         {/* Header */}
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
@@ -75,7 +75,7 @@ export default function Berita() {
             </Link>
           </Button>
         </div>
-        
+
       </div>
     </section>
   );

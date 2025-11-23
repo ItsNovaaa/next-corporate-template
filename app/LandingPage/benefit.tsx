@@ -19,27 +19,27 @@ type Benefit = {
 const benefitsData: Benefit[] = [
   {
     icon: Leaf,
-    title: "Environmental Benefits",
+    title: "Manfaat Lingkungan",
     description:
-      "Reduce carbon footprint, protect the planet and preserve the environment.",
+      "Kurangi jejak karbon, lindungi planet ini, dan lestarikan lingkungan.",
   },
   {
     icon: DollarSign,
-    title: "Financial Benefits",
+    title: "Manfaat Finansial",
     description:
-      "Lower energy bills, potential tax incentives, and more savings.",
+      "Tagihan energi lebih rendah, potensi insentif pajak, dan lebih banyak penghematan.",
   },
   {
     icon: Zap,
-    title: "Energy Independence",
+    title: "Kemandirian Energi",
     description:
-      "Take full control of your energy source and maximize your potential.",
+      "Ambil kendali penuh atas sumber energi Anda dan maksimalkan potensi Anda.",
   },
-//   {
-//     icon: ShieldCheck,
-//     title: "Reliability",
-//     description: "Enjoy uninterrupted power supply for your convenience.",
-//   },
+  //   {
+  //     icon: ShieldCheck,
+  //     title: "Reliability",
+  //     description: "Enjoy uninterrupted power supply for your convenience.",
+  //   },
 ];
 
 export default function BenefitsSection() {
@@ -47,13 +47,13 @@ export default function BenefitsSection() {
     // 1. Tata Letak Section Utama
     <section className="bg-white text-gray-900 py-16 md:py-20">
       <div className="container mx-auto px-10">
-        
+
         {/* 2. Area Header */}
         <div className="flex flex-col md:flex-row justify-between md:items-start gap-6 mb-12">
           {/* Kolom Kiri */}
           <div>
             <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
-              BENEFITS
+              MANFAAT
             </span>
             <h2 className="text-4xl font-bold text-gray-900 mt-4">
               Kemudahan Bekerja Bersama Kami
@@ -61,8 +61,8 @@ export default function BenefitsSection() {
           </div>
           {/* Kolom Kanan */}
           <p className="text-gray-600 text-lg max-w-md md:mt-2">
-            We believe in the power of solar energy to transform lives and
-            communities.
+            Kami percaya pada kekuatan energi surya untuk mengubah kehidupan dan
+            komunitas.
           </p>
         </div>
 

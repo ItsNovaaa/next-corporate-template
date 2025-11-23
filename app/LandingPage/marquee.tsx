@@ -40,7 +40,7 @@ export default function MarqueeSection() {
     <section className="py-16 md:py-20 bg-white">
       <div className="text-center px-40 py-10 flex flex-col items-center gap-4">
         <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
-          ABOUT US
+          TENTANG KAMI
         </span>
 
         {/* Judul */}
@@ -50,10 +50,10 @@ export default function MarqueeSection() {
 
         {/* Paragraf Deskripsi */}
         <p className="text-gray-600 mt-4 text-base">
-          Green Power is a leading provider of solar energy solutions, dedicated
-          to empowering individuals and businesses with clean, renewable energy.
-          We believe in the power of solar energy to transform lives and
-          communities.
+          Green Power adalah penyedia terkemuka solusi energi surya, berdedikasi
+          untuk memberdayakan individu dan bisnis dengan energi bersih dan terbarukan.
+          Kami percaya pada kekuatan energi surya untuk mengubah kehidupan dan
+          komunitas.
         </p>
       </div>
 

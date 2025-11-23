@@ -7,13 +7,13 @@ import { ArrowRight, Star } from "lucide-react";
 export default function WorkWithUs() {
   return (
     // TAMBAHKAN 'overflow-hidden' DI SINI
-    <section className="text-gray-900 overflow-hidden"> 
+    <section className="text-gray-900 overflow-hidden">
       <div className="container mx-auto px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           <div className="lg:col-span-1">
             <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1 rounded-full">
-              ABOUT US
+              TENTANG KAMI
             </span>
 
             <h2 className="text-4xl font-bold text-gray-900 mt-4">
