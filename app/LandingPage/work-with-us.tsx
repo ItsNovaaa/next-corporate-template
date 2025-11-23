@@ -1,13 +1,13 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function WorkWithUs() {
   return (
-    // TAMBAHKAN 'overflow-hidden' DI SINI
-    <section className="text-gray-900 overflow-hidden">
+    // 1. CHANGE: Removed 'overflow-hidden'. Use 'overflow-visible' or nothing.
+    // We also add 'relative z-10' to the section context.
+    <section className="text-gray-900 overflow-visible relative z-10 pb-10"> 
       <div className="container mx-auto px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -24,16 +24,20 @@ export default function WorkWithUs() {
               className="bg-secondary text-white font-semibold hover:bg-primary mt-8 px-6 py-3"
             >
               Kontak Kami
-              <ArrowRight className="w-5 h-5 ml-2" /> {/* Saya pindahkan ikon ke kanan (ml-2) */}
+              <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
 
           <div className="lg:col-span-1 w-full flex justify-end">
+            {/* 2. CHANGE: Added 'z-20'. 
+               'top-24' pushes it down into the footer area. 
+               'relative' allows z-index and top positioning to work. 
+            */}
             <img
-              src="/technition.webp"
+              src="/footer-contact.png"
               alt="Pekerja Green Power dengan panel surya"
-              className="rounded-2xl object-cover max-h-[400px] w-full lg:w-auto
-                         lg:scale-110 lg:translate-x-12" // <-- TAMBAHKAN KELAS INI
+              className="relative z-20 rounded-2xl object-cover max-h-[400px] w-full lg:w-auto 
+                       top-21 lg:scale-110 lg:translate-x-12" 
             />
           </div>
 
