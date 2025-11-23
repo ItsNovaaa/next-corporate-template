@@ -45,7 +45,7 @@ export default function MilestoneSection() {
       <div className="container mx-auto px-4 md:px-8 max-w-5xl">
         {/* Header */}
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 uppercase mb-4">
+          <h2 className="text-3xl md:text-5xl lg:text-5xl font-bold text-slate-900 uppercase mb-4">
             Perjalanan <span className="text-secondary">Kami</span>
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto">

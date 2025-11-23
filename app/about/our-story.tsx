@@ -11,7 +11,7 @@ export default function OurStory() {
   return (
     <section className="py-20 px-6 md:px-12 max-w-5xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3">
+        <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-primary mb-3">
           Cerita Kami
         </h2>
         <p className="text-gray-600 text-lg">

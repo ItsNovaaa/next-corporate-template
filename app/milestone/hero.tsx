@@ -27,7 +27,7 @@ export default function Hero() {
         {/* C. Konten Teks */}
         <div className="relative z-20 h-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center">
           {/* Judul Besar */}
-          <h1 className="text-4xl md:text-3xl lg:text-6xl font-bold text-white tracking-wide uppercase drop-shadow-lg">
+          <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold text-white tracking-wide uppercase drop-shadow-lg">
             Pencapaian Kami
           </h1>
 

@@ -44,7 +44,7 @@ export default function BusinessScope() {
         
         {/* HEADER SECTION */}
         <div className="mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-primary uppercase">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-primary uppercase lg:text-5xl">
             Lingkup <span className="text-secondary">Bisnis</span>
           </h2>
           {/* Garis Aksen: Gradient Hijau ke Biru */}

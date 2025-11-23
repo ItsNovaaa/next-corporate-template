@@ -76,7 +76,7 @@ export default function BeritaPage() {
           <span className="inline-block py-1 px-4 rounded-full bg-secondary/10 text-secondary text-sm font-bold mb-4">
             BLOG & NEWSROOM
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h1 className="text-4xl md:text-5xl  font-bold text-slate-900 mb-6">
             Wawasan & <span className="text-secondary">Berita</span>
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
